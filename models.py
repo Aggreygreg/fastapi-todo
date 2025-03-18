@@ -25,3 +25,11 @@ class UserOut(SQLModel):
     id: int
     username: str
     email: str
+
+class Login(SQLModel):
+    username: str
+    password: str
+
+class Token(SQLModel):
+    access_token: str
+    token_type: str
